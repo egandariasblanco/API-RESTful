@@ -9,6 +9,12 @@ dynamodb = boto3.resource('dynamodb')
 
 
 def create(event, context):
+    '''
+    Metodo para crear tareas en la base de datos
+    parametros:
+        event:
+        context: 
+    '''
     data = json.loads(event['body'])
     if 'text' not in data:
         logging.error("Validation Failed")
