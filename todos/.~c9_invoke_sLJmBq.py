@@ -13,7 +13,7 @@ def create(event, context):
     Metodo para crear tareas en la base de datos
     parametros:
         event:
-        context: 
+        context
     '''
     data = json.loads(event['body'])
     if 'text' not in data:
